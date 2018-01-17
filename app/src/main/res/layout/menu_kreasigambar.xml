@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    android:paddingLeft="@dimen/tool_palette_gutter"
+    android:paddingBottom="@dimen/tool_palette_gutter"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Button01"
+        style="@style/ActionBar.MenuItem"
+        android:contentDescription="load image"
+        android:onClick="clickLoad"
+        
+        android:text="@string/load" />
+
+          <Button
+            android:id="@+id/share" 
+            style="@style/ActionBar.MenuItem"
+            
+            android:text="@string/share"
+            android:contentDescription="share drawing"
+            android:onClick="clickShare"
+            />
+          <Button
+            android:id="@+id/exit"
+            style="@style/ActionBar.MenuItem"
+            
+            android:text="@string/exit"
+            android:contentDescription="load image"
+            android:onClick="clickExit"
+            />
+</LinearLayout>

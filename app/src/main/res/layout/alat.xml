@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:markers="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/tools"
+    style="@style/ActionBar.Bar"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:paddingRight="@dimen/tool_palette_gutter">
+
+	<view
+		android:id="@+id/pen_thin"
+		class="hidayahco.kreasigambar.AlatGambar$PenAlatGambar"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:padding="10dp"
+		android:tag="pen_thin"
+		markers:strokeWidthMax="4dp"
+		markers:strokeWidthMin="2dp" />
+
+    <view
+        class="hidayahco.kreasigambar.AlatGambar$PenAlatGambar"
+        android:id="@+id/pen_medium"
+        android:tag="pen_medium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        markers:strokeWidthMin="0.5dp"
+        markers:strokeWidthMax="10dp"
+        />
+
+    <view
+        class="hidayahco.kreasigambar.AlatGambar$PenAlatGambar"
+        android:id="@+id/pen_thick"
+        android:tag="pen_thick"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        markers:strokeWidthMin="2dp"
+        markers:strokeWidthMax="24dp"
+        />
+
+    <view
+        class="hidayahco.kreasigambar.AlatGambar$PenAlatGambar"
+        android:id="@+id/fat_marker"
+        android:tag="pen_marker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        markers:strokeWidthMin="18dp"
+        markers:strokeWidthMax="48dp"
+        />
+	<LinearLayout
+	    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="@dimen/tool_palette_gutter"
+	    >
+	    <view
+           class="hidayahco.kreasigambar.AlatGambar$PenTypeButton"
+           android:id="@+id/whiteboard_marker"
+           android:tag="type_whiteboard"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="3dp"
+           android:layout_weight="1"
+           markers:penType="whiteboard"
+           />
+	    <view
+           class="hidayahco.kreasigambar.AlatGambar$PenTypeButton"
+           android:id="@+id/felttip_marker"
+           android:tag="type_felttip"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="3dp"
+           android:layout_weight="1"
+           markers:penType="feltTip"
+           />
+	    <view
+           class="hidayahco.kreasigambar.AlatGambar$PenTypeButton"
+           android:id="@+id/airbrush_marker"
+           android:tag="type_airbrush"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="1dp"
+           android:layout_weight="1"
+           markers:penType="airbrush"
+           />
+	    <view
+           class="hidayahco.kreasigambar.AlatGambar$PenTypeButton"
+           android:id="@+id/fountainpen_marker"
+           android:tag="type_fountain"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="2dp"
+           android:layout_weight="1"
+           markers:penType="fountainpen"
+           />
+    </LinearLayout>
+</LinearLayout>

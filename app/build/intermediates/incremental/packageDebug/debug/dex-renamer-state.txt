@@ -1,0 +1,4 @@
+#Wed Jan 17 14:30:01 ICT 2018
+base.0=D\:\\Project Mobile\\Aplikasi Keuangan\\New folder\\Backup ORIII\\Kreasi Gambar\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

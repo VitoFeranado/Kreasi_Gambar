@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Project Mobile\\Aplikasi Keuangan\\New folder\\Backup ORIII\\Kreasi Gambar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "D:\\Project Mobile\\Aplikasi Keuangan\\New folder\\Backup ORIII\\Kreasi Gambar\\app\\src\\main\\res\\values-xlarge\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,106",
+                        "endColumns": "49,53",
+                        "endOffsets": "101,155"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,105",
+                        "endColumns": "49,53",
+                        "endOffsets": "100,154"
+                    }
+                },
+                {
+                    "source": "D:\\Project Mobile\\Aplikasi Keuangan\\New folder\\Backup ORIII\\Kreasi Gambar\\app\\src\\main\\res\\values-xlarge\\config.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "49",
+                        "endOffsets": "101"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "159",
+                        "endColumns": "49",
+                        "endOffsets": "204"
+                    }
+                }
+            ]
+        }
+    ]
+}
