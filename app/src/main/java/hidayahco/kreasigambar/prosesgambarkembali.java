@@ -52,7 +52,7 @@ public class prosesgambarkembali extends View {
     private static final float INVALIDATE_PADDING = 4.0f;
     public static final boolean ASSUME_STYLUS_CALIBRATED = true;
 
-    // keep these in sync with penType in values/attrs.xml
+    // berhubungan dengan attrs.xml
     public static final int TYPE_WHITEBOARD = 0;
     public static final int TYPE_FELTTIP = 1;
     public static final int TYPE_AIRBRUSH = 2;
