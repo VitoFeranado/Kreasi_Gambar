@@ -60,7 +60,7 @@ class prosestekan {
         prefsE.commit();
     }
 
-    // Adjusts pressure values on the fly based on historical maxima/minima.
+    // nilai terbalik, akan ditimpa pada poin berikutnya.
     public float getAdjustedPressure(float pressure) {
         if (PARTNER_HACK) {
             return pressure;
@@ -75,11 +75,11 @@ class prosestekan {
             mPressureMin = (1 - decay) * mPressureMin + decay * mPressureRecentMin;
             mPressureMax = (1 - decay) * mPressureMax + decay * mPressureRecentMax;
 
-            // upside-down values, will be overwritten on the next point
+            // nilai terbalik, akan ditimpa pada poin berikutnya
             mPressureRecentMin = 1;
             mPressureRecentMax = 0;
 
-            // walk the countdown up to the maximum value
+            // berjalan hitungan mundur untuk mendapatkan nilai maksimal
             if (mPressureCountdownStart < PRESSURE_UPDATE_STEPS_NORMAL) {
                 mPressureCountdownStart = (int) (mPressureCountdownStart * 1.5f);
                 if (mPressureCountdownStart > PRESSURE_UPDATE_STEPS_NORMAL)
